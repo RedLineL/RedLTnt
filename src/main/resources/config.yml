@@ -1,0 +1,66 @@
+# Все Права:
+# rltnt.command.reload - /rltnt reload - перезагрузить плагин
+
+# Купить все права и ключ для плагина можете тут:
+# Вк: https://vk.com/redlplugins
+
+key: "" # Ключ для запуска плагина. Вы его получите после покупки плагина у RedL Plugins
+config:
+  '1':
+    name: "&c&lRedL's Tnt"
+    fuseTick: 10 # Время до взрыва в сеундах
+    isIncendiary: false # Будет ли зажигать при взрыва
+    lightning: true # Молния при взрыве
+    breakObsidian: true
+    breakBedrock: true
+    setPower: 20 # Сила взрыва
+    craft:
+      1: "ABA" # Крафт первый столб
+      2: "BBA" # Крафт второй столб
+      3: "BBA" # Крафт третий столб
+      B: DIAMOND
+      A: STICK
+    lore: # Описание предмета
+      - ""
+      - "&fВремя взрыва: &c&l%fusetick%"
+      - "&fЗажигательный: &c&l%isincendiary%"
+      - "&fСила: &c&l%power%"
+      - "&fМожет ломать обсидиан: &c&l%breakBedrock%"
+      - "&fМожет ломать бедрок: &c&l%breakObsidian%"
+      - "&fМолния при взрыве: &c&l%lightning%"
+      - ""
+  '2': # My custom TNT 2 #
+    name: "&c&lMando's Tnt"
+    fuseTick: 0
+    isIncendiary: true
+    setPower: 100
+    craft:
+      1: "BBB"
+      2: "BCB"
+      3: "BBB"
+      B: DIAMOND
+      C: STICK
+    lore:
+      - "&fName: &c&l%name%"
+      - "&fFuse Tick: &c&l%fusetick%"
+      - "&fIncendiary: &c&l%isincendiary%"
+      - "&fPower: &c&l%power%"
+translations:
+  true: "&c&lДа"
+  false: "&c&lНет"
+messages:
+  reload-success: "&c&lRedL TNT plugin configuration reloaded and recipes recreated."
+  reload-usage: "&c&lUsage: /redl restart"
+  nopermission: "&c&lYou dont have permission to do that."
+  plugin-not-initialized: "&cPlugin not properly initialized."
+  no-permission: "&cYou don't have permission to use this command."
+  reload-success: "&aRedL TNT plugin configuration reloaded and recipes recreated."
+  reload-usage: "&cUsage: /rltnt reload"
+  give-usage: "&cUsage: /rltnt give <player> <tnt_name> <amount>"
+  player-not-found: "&cPlayer not found or not online."
+  invalid-amount: "&cInvalid amount. Please enter a valid number."
+  positive-amount: "&cAmount must be a positive integer."
+  tnt-not-exist: "&cCustom TNT with key '%key%' does not exist."
+  given: "&aYou have given %amount%x %tnt_name% to %player%."
+  received: "&aYou have received %amount%x %tnt_name% from %player%."
+  tntTimer: "&aTo explode &c%timer%"

@@ -1,0 +1,20 @@
+name: RedLTnt
+version: '${project.version}'
+main: redltnt.redl.RedLTnt
+api-version: 1.20
+authors: [ RedLPlugins ]
+commands:
+  rltnt:
+    description: Reload plugin command
+    usage: /rltnt reload
+    permission: rltnt.command.reload
+    aliases:
+      - tnt
+      - redltnt
+permissions:
+  rltnt.command.reload:
+    description: Allows reload plugin
+    default: op
+  rltnt.command.give:
+    description: Allow give tnt
+    default: op
